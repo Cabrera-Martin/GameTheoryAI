@@ -1,4 +1,5 @@
 #Tic Tac Toe game in python
+'''
 
 board = [' ' for x in range(10)]
 
@@ -6,9 +7,9 @@ def insertLetter(letter, pos):
     board[pos] = letter
 
 def spaceIsFree(pos):
-    return board[pos] == ' '
+    return board[pos] ==
 
-def printBoard(board):
+ def printBoard(board):
     print(' 1 | 2 | 3\n' ' '
           + board[1] + ' | ' + board[2] + ' | ' + board[3] +
           '\n''-----------''\n 4 | 5 | 6\n' ' '
@@ -16,8 +17,17 @@ def printBoard(board):
           '\n''-----------''\n 7 | 8 | 9\n' ' '
           + board[7] + ' | ' + board[8] + ' | ' + board[9] +
           '\n''-----------')
-def isWinner(bo, le):
-    return (bo[7] == le and bo[8] == le and bo[9] == le) or (bo[4] == le and bo[5] == le and bo[6] == le) or(bo[1] == le and bo[2] == le and bo[3] == le) or(bo[1] == le and bo[4] == le and bo[7] == le) or(bo[2] == le and bo[5] == le and bo[8] == le) or(bo[3] == le and bo[6] == le and bo[9] == le) or(bo[1] == le and bo[5] == le and bo[9] == le) or(bo[3] == le and bo[5] == le and bo[7] == le)
+def isWinner(bo, mark):
+    return (bo[7] == mark and bo[8] == mark and bo[9] == mark) or (
+                bo[4] == mark and bo[5] == mark and bo[6] == mark) or (
+                bo[1] == mark and bo[2] == mark and bo[3] == mark) or (
+                bo[1] == mark and bo[4] == mark and bo[7] == mark) or (
+                bo[2] == mark and bo[5] == mark and bo[8] == mark) or (
+                bo[3] == mark and bo[6] == mark and bo[9] == mark) or (
+                bo[1] == mark and bo[5] == mark and bo[9] == mark) or (
+                bo[3] == mark and bo[5] == mark and bo[7] == mark)
+
+'''
 
 def playerMove():
     run = True
